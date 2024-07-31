@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css">
+  <title>Portfolio website</title>
+</head>
+
+<body class="maincontainer">
+  <!-- ----------HEADER------------- -->
+  <nav id="desktop-nav">
+    <div class="logo">Mahesh Kawhale</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#profile-section">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="sitelogos">
+      <a href="https://www.instagram.com/mahesh_kawhale"><img src="Images/instagramlogo.svg" class="instalogo" alt="" /></a>
+      <a href="https://www.linkedin.com/in/mahesh-kawhale-639b93256/"><img src="Images/linkedinlogo.svg" class="linkedinlogo" alt="" /></a>
+    </div>
+  </nav>
+  <!-- -----------------------Hamburger Menu--------------------------- -->
+  <nav id="hamburger-nav">
+    <div class="logo">Mahesh Kawhale</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#profile-section" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <!-----------Profile------------>
+  <section id="profile-section">
+    <div class="section-box">
+      <div class="profile-image-box">
+        <img class="profile-img" src="Images/Mahesh Passport.png" alt="">
+      </div>
+      <div class="profile-text">
+        <p class="section-p">Hello I'm</p>
+        <h1 class="section-title">Mahesh Kawhale</h1>
+        <p class="section-p">Web developer</p>
+        <div class="btn_box">
+          <button class="mybtn" onclick="window.open('./assets/maheshresume.pdf')">Download CV</button>
+          <button class="mybtn" onclick="window.location.hash='contact'">Contact Me</button>
+        </div>
+        <div class="sitelogos">
+          <a href="https://github.com/mahesh-kawhale"><img src="Images/github.svg" alt="github "></a>
+          <a href="https://www.linkedin.com/in/mahesh-kawhale-639b93256/"><img src="Images/linkedinlogo.svg" alt="github "></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------About Section----------------- -->
+  <section id="about">
+    <div class="about-text">
+      <p class="section-p">Get to Know More</p>
+      <h1 class="section-title">About Me</h1>
+    </div>
+    <div class="section-box-container">
+      <div class="section-box">
+        <div class="about-box">
+          <div class="details-box">
+            <img src="Images/experinece.svg" alt="">
+            <h3>Fresher</h3>
+            <p>Looking for job in<br> Software Engineering</p>
+            <p>I have hands-on experinece in Java, Python, JavaScript and ReactJS,
+              to know more about me please check my GitHub Profile </p>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="details-box">
+            <img src="Images/edu.svg" alt="">
+            <h3>Education</h3>
+            <p>MCA Master Degree(2025) <br> BCA Bachelor Dergree(2023)</p>
+            <p>Currently I am Pursuing My Masters and expected to be complete in 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!------------Skills----------------->
+  <section id="experience">
+    <div class="exp-box-text">
+      <p class="section-p">Explore My</p>
+      <h1 class="section-title">Technical Skills</h1>
+    </div>
+    <div class="experience-container">
+      <!-- first box -->
+      <div class="experience-box">
+        <h2 class="section-subtext">Programming Languages</h2>
+        <div class="article-box-container">
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">Java</h3>
+              <p>Advanced</p>
+            </div>
+          </div>
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">C++</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">JavaScript</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second box -->
+      <div class="experience-box">
+        <h2 class="section-subtext">Web Developement</h2>
+        <div class="article-box-container">
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">HTML</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">CSS</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">React JS</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- third box -->
+      <div class="experience-box">
+        <h2 class="section-subtext">Databases</h2>
+        <div class="article-box-container">
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">MySQL</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="article-box">
+            <img src="Images/checkmark.svg" alt="">
+            <div class="exp-text-box">
+              <h3 class="section-subtitle">MongoDB</h3>
+              <p>Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="about-text">
+      <p class="section-p">Browse My Recents</p>
+      <h1 class="section-title">Projects</h1>
+    </div>
+    <div class="section-box-container">
+      <div class="experience-container">
+        <!-- project1 -->
+        <div class="project-box">
+          <div class="project-img-box">
+            <img class="project-img" src="Images/project1.jpg" alt="">
+          </div>
+          <h2 class="section-subtext">My WhiteBoard</h2>
+          <div class="btn-container">
+            <button class="mybtn" onclick="location.href='https://github.com/mahesh-kawhale/My-Whiteboard'">GitHub</button>
+            <button class="mybtn" onclick="loaction.href='https://mahesh-kawhale.github.io/My-Whiteboard/'">Live Demo</button>
+          </div>
+        </div>
+        <!-- project2 -->
+        <div class="project-box">
+          <div class="project-img-box">
+            <img class="project-img" src="Images/project2.jpg" alt="">
+          </div>
+          <h2 class="section-subtext">Realtime Chat Application</h2>
+          <div class="btn-container">
+            <button class="mybtn" onclick="location.href='https://github.com/mahesh-kawhale/My-ChatApp'">GitHub</button>
+            <button class="mybtn" onclick="loaction.href='https://chatappbymahesh.netlify.app/login'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+<!-- contact section -->
+  <section id="contact">
+    <div class="about-text">
+      <p class="section-p">Get In Touch</p>
+      <h1 class="section-title">Contact Me</h1>
+    </div>
+    <div class="contact-info-container">
+      <div class="contact-info-box">
+        <div class="contact-info">
+          <img src="Images/email.svg" alt="">
+          <p><a href="mailto:maheshkawhale1712@gmail.com">maheshkawhale1712@gmail.com</a></p>
+        </div>
+  
+        <div class="contact-info">
+          <img src="Images/linkedinlogo.svg" alt="">
+          <p><a href="https://github.com">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="copyright">Copyright &#169; 2024 Mahesh Kawhale. All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
